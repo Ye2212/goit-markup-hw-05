@@ -28,7 +28,6 @@ body {
   color: var(--primary-text-color);
   font-family: "Roboto", sans-serif;
   font-size: 14px;
-  letter-spacing: 0.03em;
 }
 img {
   display: block;
@@ -114,7 +113,6 @@ margin-right: 50px;
   padding-bottom: 31px;
 }
 
-
 .header {
 background-color: var(--white-color);
 border-bottom: 1px solid #ececec;
@@ -151,7 +149,6 @@ border-bottom: 1px solid #ececec;
   position: absolute;
   left: 0;
   bottom: 0;
-
 }
 .site-contacts {
   display: flex;
@@ -286,7 +283,6 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Наши преимущества */
-
 .section-title {
   margin-bottom: 50px;
   text-align: center;
@@ -297,7 +293,6 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   line-height: 1.16;
   letter-spacing: 0.03em;
 }
-
 
 .visually-hidden {
   position: absolute;
@@ -365,7 +360,6 @@ font-weight: 400;
 }
 
 /* Наши работы */
-
 .works {
   padding-top: 47px;
   padding-bottom: 94px;
@@ -389,7 +383,6 @@ font-weight: 400;
 
 .works-item-image-wrapper {
   position: relative;
-
 }
 
 .works-item-text-overlay {
@@ -403,19 +396,17 @@ font-weight: 400;
   bottom: 0;
   left: 0;
 
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 
-font-family: Roboto;
-font-style: normal;
-font-weight: 700;
-font-size: 14px;
-line-height: 1.14;
-text-align: center;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-
-color: var(--white-color);
-background-color: rgba(47, 48, 58, 0.8);
-
+  color: var(--white-color);
+  background-color: rgba(47, 48, 58, 0.8);
 }
 
 /* Раздел команда */
@@ -448,8 +439,8 @@ background-color: rgba(47, 48, 58, 0.8);
   flex-wrap: wrap;
   margin-top: -30px;
   margin-left: -30px;
-
 }
+
 .team-item-card {
   flex-basis: calc((100% - 120px) / 4);
   margin-top: 30px;  
@@ -788,9 +779,20 @@ color: var(--primary-text-color);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 } 
 
-
+/* 
 .projects-item:hover,
 .projects-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+  0px 4px 4px rgba(0, 0, 0, 0.06), 
+  1px 4px 6px rgba(0, 0, 0, 0.16);
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+} */
+.projects-item-link {
+  display: block;
+}
+.projects-item-link:hover,
+.projects-item-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
   0px 4px 4px rgba(0, 0, 0, 0.06), 
   1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -840,7 +842,6 @@ color: var(--primary-text-color);
 
 
 /* Модальное окно */ 
-
 .backdrop {
   position: fixed;
   height: 100vh;
@@ -855,9 +856,7 @@ color: var(--primary-text-color);
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
-
 }
-
 .modal {
   position: absolute;
   width: 528px;
@@ -870,7 +869,6 @@ color: var(--primary-text-color);
   transform: translate(-50%, -50%);
   opacity: 1;
 }
-
 .btn-close {
   width: 30px;
   height: 30px;
@@ -884,7 +882,6 @@ color: var(--primary-text-color);
   align-items: center;
   justify-content: center;
   cursor: pointer;
-
 }
 .icon-btn-close{
   fill: #000000;
